@@ -20,7 +20,7 @@ keyboard = [
         KeyboardButton("Получить Анекдот 😂"),
         KeyboardButton("Получить Анекдот 🔞")
 ]
-reply_markup = ReplyKeyboardMarkup(build_menu(keyboard, n_cols=1))
+reply_markup = ReplyKeyboardMarkup(build_menu(keyboard, n_cols=1), resize_keyboard=True)
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
